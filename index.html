@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="images/png" href="snakeicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body">
+
+        <button type="button" class="icon" onclick="show()"><img src="images.png"></button>
+        <div class="rule hide">
+            <h4 style="text-align: center;">-:RULES:-</h4>
+            <p>
+                1.Press <b>any key</b> to start the game.<br>
+                2.Press <b>Arrow Keys</b> to change the direction of the snake.<br>
+                3.You can change the speed of snake <b>by changing the difficulty level</b>.<br>
+            </p>
+            <p style="text-align: center; font-size: 15px;">(click again to close)</p>
+        </div>
+
+        <div id="difficulty">
+            <form>
+                <label>Difficulty Level:</label><br>
+                <select id="dif" onchange="speed1()">
+                    <option>Select Difficulty Level</option>
+                    <option value="1">Very Easy</option>
+                    <option value="2">Easy</option>
+                    <option value="3">Medium</option>
+                    <option value="4">Hard</option>
+                    <option value="5">Very Hard</option>
+                </select>
+            </form>
+        </div>
+        <div id="schoreBox">Score:0</div>
+        <div id="highschoreBox">High Score:0</div>
+        <div id="board"></div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
